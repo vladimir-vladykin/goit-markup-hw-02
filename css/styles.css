@@ -1,6 +1,7 @@
 /* core variables */
 :root {
     --primary-font: 'Roboto', sans-serif;
+    --logo-font: 'Raleway', sans-serif;
 
     /* Colors */
     --cl-iris: #4D5AE5;
@@ -24,7 +25,7 @@ body {
     font-family: var(--primary-font);
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em;
 }
 
 /* Reset */
@@ -45,31 +46,34 @@ address {
     font-size: 36px;
     line-height: 1.11;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em;
     color: var(--cl-navy-blue);
 }
 .item-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em;
     color: var(--cl-navy-blue);
+}
+.item-text {
+    font-size: 16px;
 }
 /* #endregion */
 
 /* #region Logo */
 .logo {
+    font-family: var(--logo-font);
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: -0.03em;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--cl-iris);
 }
-
 .logo-span-dark {
     color: var(--cl-navy-blue);
 }
-
 .logo-span-light {
     color: var(--cl-cloud);
 }
@@ -80,7 +84,7 @@ address {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em;
     color: var(--cl-navy-blue);
 }
 .nav-link:hover,
@@ -91,12 +95,11 @@ address {
 /* #endregion */
 
 /* #region Address */
+.address-section {}
 .address-link {
     font-size: 16px;
-    font-weight: 500;
     line-height: 1.5;
-    letter-spacing: -0.02em;
-    color: var(--cl-navy-blue);
+    letter-spacing: 0.02em;
 }
 
 .address-link:hover,
@@ -114,20 +117,21 @@ address {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em;
     text-align: center;
     color: var(--cl-white);
 }
 .hero-button {
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: -0.04em;
+    letter-spacing: 0.04em;
     font-weight: 500;
     cursor: pointer;
     color: var(--cl-white);
     background-color: var(--cl-iris);
 }
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
     background-color: var(--cl-ocean);
 }
 /* #endregion */
@@ -135,6 +139,20 @@ address {
 /* #region Our Team */
 .section-our-team {
     background: var(--cl-cloud);
+}
+.title-our-team {
+    text-align: center;
+    text-transform: capitalize;
+}
+.list-item-our-team {
+    background-color: var(--cl-white);
+}
+/* #endregion */
+
+/* #region Portfolio*/
+.portfolio-title {
+    text-align: center;
+    text-transform: capitalize;
 }
 /* #endregion */
 
